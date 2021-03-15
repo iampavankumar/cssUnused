@@ -1,0 +1,434 @@
+/*
+|--------------------------------------------------------------------------
+| General
+|--------------------------------------------------------------------------
+*/
+
+/* Set cursor for anchors without HREF */
+a:not([href]) {
+  cursor: default;
+}
+
+/* Prevent NAP phone numbers from breaking mid-word */
+.nap-item--phone {
+  white-space: nowrap;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
+
+/* Reset font weight */
+body {
+  font-weight: initial;
+}
+
+/* Prevent headers from breaking mid-word */
+h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: normal;
+}
+
+a:visited {
+	color: #251f13;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Forms
+|--------------------------------------------------------------------------
+*/
+.nf-form-content {
+  max-width: 100% !important;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Form Disclaimer
+|--------------------------------------------------------------------------
+*/
+
+.fl-disclaimer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: opacity 0.15s ease-in, max-height 0.15s ease-in 0.15s;
+}
+
+.fl-disclaimer.active {
+  opacity: 1;
+  transition: opacity 0.15s ease-out 0.15s, max-height 0.15s ease-out;
+}
+
+.fl-disclaimer__inner {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  font-size: 14px;
+  color: black;
+  transform: scale(0.95);
+  transition: transform 0.15s ease-out;
+}
+
+.fl-disclaimer.active .fl-disclaimer__inner {
+  transform: scale(1);
+  transition: transform 0.15s ease-out 0.15s;
+  z-index: 1;
+}
+
+.fl-disclaimer__icon {
+  display: inline-block;
+  vertical-align: top;
+  font-family: dashicons;
+}
+
+.fl-disclaimer__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-family: dashicons;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.15s ease-out;
+}
+
+.fl-disclaimer__close:hover,
+.fl-disclaimer__close:focus {
+  opacity: 0.5;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Utility Classes & Fix
+|--------------------------------------------------------------------------
+*/
+
+.single-people .et_pb_post,
+.single-landing-page .et_pb_post {
+  margin-bottom: 0;
+}
+
+/* Dsiplay */
+.fl-hide {
+  display: none !important;
+}
+
+.fl-block {
+  display: block !important;
+}
+
+.fl-inline-block {
+  display: inline-block;
+}
+
+/* Responsive mobile & tablet */
+@media only screen and (max-width: 980px) {
+  /* Set site width */
+  .et_pb_row,
+  .container {
+    width: 90%;
+  }
+  
+  body.et_pb_gutters1 .et_pb_column .et_pb_widget {
+    width: 100% !important;
+  }
+}
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+*/
+
+/* Mobile Menu (template) */
+.fl-mobile-menu .et_mobile_nav_menu,
+.fl-mobile-menu .et_mobile_nav_menu > a {
+	width: 100%;
+}
+.fl-mobile-menu .mobile_menu_bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 57px;
+}
+.fl-mobile-menu .mobile_menu_bar:after {
+	content: "MENU";
+	color: #fff;
+	font: small-caps bold 24px/1 sans-serif;
+}
+.fl-mobile-menu ul.et_mobile_menu {
+    border: none;
+    padding: 0;
+}
+/* Mobile Practice Areas */
+.fl-mobile-menu.fl-mobile-pa .mobile_menu_bar {
+	height: 51px;
+} 
+.fl-mobile-menu.fl-mobile-pa .mobile_menu_bar:after {
+	content: "VIEW OUR PRACTICE AREAS";
+}
+
+/* Custom CSS for Menu */
+.fl-header-section .fl-main-menu ul li{
+	padding: 0px!important;
+	margin-top:0px!important;
+}
+.fl-header-section .fl-main-menu ul li.menu-item>a:last-child{
+	padding:7px 7px 7px 7px!important;
+	margin: 0 4px 0px 4px!important;
+	background:#242321!important;
+	border-radius: 6px;
+}
+.fl-header-section .fl-main-menu ul li.menu-item>a:hover{
+	background:#1c1b1a!important;
+	border-radius: 6px;
+	opacity:1;
+}
+.fl-header-section .fl-main-menu ul li.menu-item>a:hover a{
+	opacity:1;
+}
+
+/* Custom CSS for 981px or tablet version */
+@media all and (min-width: 981px) and (max-width: 1099px) {
+.fl-row{
+	width:95%;
+}
+}
+
+/* Custom CSS for 980px or mobile version */
+@media all and (max-width: 980px) {
+.fl-header-section .fl-main-menu .et_mobile_nav_menu{
+	display:none;
+}
+.fl-header-section .fl-main-menu .et_pb_menu__menu{
+	display:block!important;
+}
+.fl-header-section .fl-main-menu ul.et-menu{
+	justify-content: left!important;
+	text-align:left!important;
+}
+.fl-header-section .fl-main-menu .et_pb_menu__wrap{
+	justify-content:flex-start!important;
+}
+.fl-row-mobile{
+	width:100%;
+}
+} /*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+.fl-info{
+	display:inline-block;
+	vertical-align:top;
+}
+
+/* Custom css for link hover */
+.fl-link-hover a:hover{
+	text-decoration:none;
+}/*
+|--------------------------------------------------------------------------
+| Home
+|--------------------------------------------------------------------------
+*/
+/*
+|--------------------------------------------------------------------------
+| Internal
+|--------------------------------------------------------------------------
+*/
+/* Sidebar */
+.fl-sidebar ul{
+	padding: 0 0 0 20px !important;
+}
+
+.fl-sidebar ul li{
+	margin: 0 !important;
+}
+
+.et-db #page-container .fl-sidebar .menu li{
+	list-style: disc;
+	color: #333 !important;
+}
+
+.et-db #page-container .fl-sidebar .sub-menu li{
+	list-style: circle;
+	color: #333 !important;
+}
+
+.fl-sidebar li > a:hover{
+	color: #292826 !important;
+	text-decoration: underline;
+}
+
+/* Main content styles */
+.fl-main-content.et_pb_post_content h1{
+	padding-bottom: 34px;
+}
+
+.fl-main-content.et_pb_text a:visited,
+.fl-main-content.et_pb_post_content a:visited{
+	color: #242321 !important;
+}
+
+.fl-main-content.et_pb_text a:active,
+.fl-main-content.et_pb_post_content a:active{
+	color: #0f0e0d !important;
+}
+
+.fl-main-content.et_pb_text a:hover,
+.fl-main-content.et_pb_post_content a:hover,
+.fl-main-content.et_pb_text a:focus,
+.fl-main-content.et_pb_post_content a:focus{
+	color: #242321 !important;
+	text-decoration: none !important;
+}
+
+.fl-main-content.et_pb_post_content .et_pb_row{
+	width: 100% !important;
+}
+
+.fl-main-content p.callOut,
+.fl-main-content blockquote {
+	font-size: 20px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+/*
+|--------------------------------------------------------------------------
+| People
+|--------------------------------------------------------------------------
+*/
+
+/* Style link for people */
+.et-db #et-boc .fl_people_single a {
+	text-decoration: none;
+}
+
+/* People position */
+.fl-people-position ul.bio-list {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+
+/* People image */
+.fl-people-image {
+	float: right;
+}
+
+/* Responsive mobile & tablet */
+@media only screen and (max-width: 980px) {
+	.fl-people-image {
+		float: none;
+	}
+}/*
+|--------------------------------------------------------------------------
+| Blog, Archives, Single Post, Search Result, 404
+|--------------------------------------------------------------------------
+*/
+/* Sidebar */
+
+.fl-sidebar-blog aside:not(:last-child) ul {
+	margin-bottom: 20px;
+}
+
+.fl-sidebar-blog .widgettitle {
+	margin: 21.18px 0 !important;
+}
+
+.fl-sidebar-blog ul li {
+	text-decoration: underline !important;
+	padding: 3px 0 !important;
+}
+
+.fl-sidebar-blog ul li:hover,
+.fl-sidebar-blog ul li:hover a {
+	text-decoration: none !important;
+}
+
+/* Title */
+
+.fl-blog-section .fl-loop-blog .et_pb_post h2.entry-title {
+	margin: 19.92px 0 !important;
+	padding: 0 0 3px !important;
+}
+
+.fl-blog-section .fl-loop-blog .et_pb_post h2.entry-title a:hover {
+	text-decoration: none !important;
+}
+
+/* Post */
+.fl-loop-blog .et_pb_post .post-meta,
+.fl-loop-blog .et_pb_post .post-content p,
+.fl-blog-title .et_pb_title_meta_container {
+	margin: 16px 0 !important;
+	color: #292826 !important;
+}
+
+/* Link */
+.fl-loop-blog .et_pb_post .post-meta a,
+.fl-loop-blog .et_pb_post .post-content .more-link,
+.fl-blog-title .et_pb_title_meta_container a {
+	color: #242321 !important;
+	text-decoration: underline;
+}
+
+.fl-loop-blog .et_pb_post .post-meta a:hover,
+.fl-loop-blog .et_pb_post .post-content .more-link:hover,
+.fl-blog-title .et_pb_title_meta_container a:hover {
+	text-decoration: none !important;
+}
+
+.fl-blog-section .et_social_inline {
+    margin-top: 30px !important;
+}
+
+@media only screen and (max-width: 980px) {
+	.fl-loop-blog .et_pb_post .post-meta,
+	.fl-loop-blog .et_pb_post .post-content p {
+        margin: 16px 0 !important;
+	}
+}
+
+
+/* gandamaneni.pavankumar@thomsonreuters.com
+
+Cicero@chipmanbrown.com */
+
+
+
+.fl-mobile-menu ul#mobile_menu2{
+    width: 197%;
+    margin-top: 10px;
+}
+
+
+
+.parent-pageid-46093 .fl-sidebar ul#menu-practice-areas li:nth-child(3)>ul.sub-menu{
+    display:block !important;
+}
+
+@media screen and (min-width:981px){
+    .fl-landing-header .et_pb_image_0_tb_header{
+        top:-55px !important;
+    }
+}
+
+.page-id-47813 .fl-banner-internal{
+    background: #2a2e3c;
+}
+
+
+.page-id-47561 .fl-main-content sup{
+    font-size:12px;
+    bottom:-0.5em;
+}

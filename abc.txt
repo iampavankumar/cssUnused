@@ -1,0 +1,252 @@
+flbuilder-default@thomsonreuters.com 
+
+
+gandamaneni.pavankumar@thomsonreuters.com
+
+
+https://www.shawlawfirm.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png
+
+
+
+1. Site map page:
+Publisher url:https://www.robinkruegerlaw.com/Site-Map.shtml
+Wp url:https://2769266.findlaw6.flsitebuilder.com/site-map/
+
+a. Mismatch is seen in the links when compared with WP and Publisher sites   ===> FIXED(As per the best practise search page has been created)
+
+2. criminal-defense page:
+Publisher url: 
+https://2769266.findlaw6.flsitebuilder.com/criminal-defense/
+
+Wp url:https://www.robinkruegerlaw.com/Criminal-Defense/
+Mismatch is seen in the practice area silo navigation and there Highlighting of the links in the silo navigation 
+The defect seen in all the internal pages.   ===> FIXED
+
+3. child-support-spousal-support page:
+Publisher url:https://www.robinkruegerlaw.com/Family-Law/Child-Support-Spousal-Support.shtml
+
+Wp url: 
+https://2769266.findlaw6.flsitebuilder.com/family-law/child-support-spousal-support/
+
+a. Font size is not matching with the Publisher and WP site.  ===> FIXED
+
+4. Robin-N-Krueger page:
+Publisher url: 
+https://www.robinkruegerlaw.com/Attorney-Profiles/Robin-N-Krueger.shtml
+WP url: https://2769266.findlaw6.flsitebuilder.com/attorney/robin-n-krueger/
+
+a. Previous Names section is missing in the Wp site.  ===> FIXED
+b. There is no Highlighting for the 'Attorney profile' in the main navigation   ===> FIXED
+
+
+5. Home page:
+Publisher url: 
+https://www.robinkruegerlaw.com/
+
+Wp url: https://2769266.findlaw6.flsitebuilder.com/
+
+
+a. Banner image mismatch is seen.  ===> FIXED
+
+b. The link 'your' is not seen in the Logo in WP site that is not seen in the Publisher ==> Not a defect (Did not replicate issue)   
+
+c. Facebook link seen in the wp site is not seen in the Publisher  ==> Not a defect (Did not replicate issue)   
+
+d. There is no Images seen in the Text fields in the short forms  ===> FIXED
+
+e. There is no hovering state for the many links in the WP site ===> FIXED
+
+
+
+
+    https://performanceconsole.int.thomsonreuters.com/manage/customer-appv2/#/customer/4588479/diagnostics?fsSubId=3155507
+
+
+
+https://performanceconsole.int.thomsonreuters.com/manage/customer-appv2/#/customer/4588479/diagnostics?fsSubId=3478629
+
+
+
+
+
+https://www.dscaleslaw.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png
+
+
+
+i have one issue in redirection can you please look it once,
+https://2934048.findlaw6.flsitebuilder.com/blog/undefined/​​​​​​​   ---> i have redirected to blog as per htaccess file but it is not working
+
+
+
+.search-results article img{
+
+width:150px;
+
+}
+
+
+
+3478629	
+
+
+
+Below external links do not open on a new window:
+http://www.sun-sentinel.com/local/broward/fl-red-light-cameras-supreme-court-20150415-story.html https://www.floridatoday.com/story/news/local/2015/01/15/red-light-cameras-stay-cocoa-beach/21842431/ http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2015/05/red-light-cameras/       ===> FIXED
+
+https://www.nhtsa.gov/risky-driving/distracted-driving http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2017/01/some-drivers-fail-to-consider-the-consequences-of-distractions/   ===> FIXED
+
+https://www.local10.com/news/florida/broward/1-dead-1-seriously-hurt-after-driver-crashes-into-pack-of-cyclists-in-davie https://www.orlandosentinel.com/news/os-bike-study-national-fatalities-20170823-story.html http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2018/12/distracted-driver-collides-with-group-of-cyclists-killing-one/   ===> FIXED
+ 
+https://www.christopherreeve.org/living-with-paralysis/newly-paralyzed/what-are-the-secondary-conditions-associated-with-paralysis http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2017/01/what-is-the-difference-between-murder-and-manslaughter-1/    ===> FIXED
+
+https://www.marketwatch.com/story/your-failing-marriage-is-about-to-make-the-retirement-crisis-worse-2017-03-13 https://ifstudies.org/blog/who-is-at-risk-for-a-gray-divorce-it-depends http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2019/01/gray-divorce-has-doubled/  ===> FIXED
+
+https://www.psychologytoday.com/blog/schlepping-through-heartbreak/201512/getting-through-the-holidays-after-break http://legalblogs.findlaw.com/
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2016/12/3-ways-to-make-the-holidays-smoother-after-a-divorce-or-breakup/   ===> FIXED
+ 
+http://www.acfc.org/acfc/assets/documents/research_pdf%27s/SP%20brochure_rev_10_20_2011.pdf
+Referrer URL: https://3155507.findlaw6.flsitebuilder.com/blog/2017/04/sharing-custody-partnering-to-parent-better/    ===> FIXED
+
+http://legalblogs.findlaw.com/
+Referrer URL: This can be found on all pages.
+
+
+
+Hi @taylor wahl
+Can you please look into this issue
+https://2934048.findlaw6.flsitebuilder.com/blog/undefined/   is going to 404 ,it requires domain level redirect, so that i can proceed the task
+
+
+
+
+
+Hi @Michelle Ko 
+Can you please look into this issue
+
+1. Mismatch seen in  copyright section.
+
+Here text is coming from Short Code developer can't edit this. Can you please look into this.
+
+Thankyou
+
+
+
+
+
+Hi @Michelle Ko Can you please look into #2 & #3 Isuues
+
+2. Mismatch seen in firm name in contact block and copyright section.
+3. Mismatch seen in link text in copyright section.
+
+Here the text is coming from Short Code developer can't edit this. Can you please look into this
+
+Thanks
+
+
+
+
+Hi @Michelle Ko 
+Can you please look into this issue
+
+ 
+
+1. Mismatch seen in  copyright section.
+
+ 
+
+Here text is coming from Short Code developer doesn't have access to edit this. Can you please look into this.
+
+ 
+
+Thankyou
+
+
+
+
+
+Hi 
+The phone numbers which is present in office location page is not present in NAP management, so could you please update the following phone in NAP management,
+1)(406) 563-3424
+
+URL's:
+https://www.kdesdlaw.com/Anaconda-Personal-Injury-Office.shtml
+
+Thank you!
+
+
+
+
+
+https://www.thomasamullen.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png
+
+
+
+
+
+FO-----> Nationwide Business Litigation & Personal Injury Defense Attorneys | Charleston SC South Carolina Lawyer
+
+
+/attorneys/  ---->  Nationwide Business Litigation & Personal Injury Defense Attorneys | Charleston SC South Carolina Lawyer
+
+
+The Maybank Law Firm: Litigation attorneys serving insurance companies and businesses in Charleston, South Carolina and beyond.
+
+
+PA  --> Nationwide Business Litigation & Personal Injury Defense Attorneys | Charleston SC South Carolina Lawyer
+
+The Maybank Law Firm: Litigation attorneys serving insurance companies and businesses in Charleston, South Carolina and beyond.
+
+
+
+
+
+1309619
+
+
+contact
+
+
+Santa Rosa CA Family Law & Divorce Lawyer | Sonoma County Child Support Attorney
+For family law advice in Santa Rosa and Sonoma County, call a lawyer at Terre Family Law at 707-867-0404.
+
+
+
+/privacy/
+
+
+Santa Rosa CA Family Law & Divorce Lawyer | Sonoma County Child Support Attorney
+
+For family law advice in Santa Rosa and Sonoma County, call a lawyer at Terre Family Law at 707-867-0404.
+
+
+search
+
+Santa Rosa CA Family Law & Divorce Lawyer | Sonoma County Child Support Attorney
+
+For family law advice in Santa Rosa and Sonoma County, call a lawyer at Terre Family Law at 707-867-0404.
+
+
+
+.fl-search-button
+
+
+.fl-search 
+
+
+
+
+
+
+
+
+
+https://maps.google.com/?q=Perelmutter,+Potash+%26+Ginzberg,+P.C.+11+Bank+Street+Seymour+CT+06483
+
+
+
+https://www.shevylaw.com/wp-content/plugins/all-in-one-seo-pack/images/default-user-image.png

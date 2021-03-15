@@ -1,0 +1,518 @@
+/*
+|--------------------------------------------------------------------------
+| General
+|--------------------------------------------------------------------------
+*/
+
+/* Set cursor for anchors without HREF */
+a:not([href]) {
+    cursor: default;
+  }
+  
+  /* Prevent NAP phone numbers from breaking mid-word */
+  .nap-item--phone {
+    white-space: nowrap;
+  }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | Typography
+  |--------------------------------------------------------------------------
+  */
+  
+  /* Reset font weight */
+  body {
+    font-weight: initial;
+  }
+  
+  /* Prevent headers from breaking mid-word */
+  h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: normal;
+  }
+  
+  a:visited {
+      color: #251f13;
+  }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | Forms
+  |--------------------------------------------------------------------------
+  */
+  .nf-form-content {
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | Form Disclaimer
+  |--------------------------------------------------------------------------
+  */
+  
+  .fl-disclaimer {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity 0.15s ease-in, max-height 0.15s ease-in 0.15s;
+  }
+  
+  .fl-disclaimer.active {
+    opacity: 1;
+    transition: opacity 0.15s ease-out 0.15s, max-height 0.15s ease-out;
+  }
+  
+  .fl-disclaimer__inner {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #fff;
+    font-size: 14px;
+    color: black;
+    transform: scale(0.95);
+    transition: transform 0.15s ease-out;
+  }
+  
+  .fl-disclaimer.active .fl-disclaimer__inner {
+    transform: scale(1);
+    transition: transform 0.15s ease-out 0.15s;
+    z-index: 1;
+  }
+  
+  .fl-disclaimer__icon {
+    display: inline-block;
+    vertical-align: top;
+    font-family: dashicons;
+  }
+  
+  .fl-disclaimer__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family: dashicons;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.15s ease-out;
+  }
+  
+  .fl-disclaimer__close:hover,
+  .fl-disclaimer__close:focus {
+    opacity: 0.5;
+  }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | Utility Classes & Fix
+  |--------------------------------------------------------------------------
+  */
+  
+  .single-people .et_pb_post,
+  .single-landing-page .et_pb_post {
+    margin-bottom: 0;
+  }
+  
+  /* Dsiplay */
+  .fl-hide {
+    display: none !important;
+  }
+  
+  .fl-block {
+    display: block !important;
+  }
+  
+  .fl-inline-block {
+    display: inline-block;
+  }
+  
+  /* Responsive mobile & tablet */
+  @media only screen and (max-width: 980px) {
+    /* Set site width */
+    .et_pb_row,
+    .container {
+      width: 90%;
+    }
+    
+    body.et_pb_gutters1 .et_pb_column .et_pb_widget {
+      width: 100% !important;
+    }
+  }
+  /*
+  |--------------------------------------------------------------------------
+  | Header
+  |--------------------------------------------------------------------------
+  */
+  /* Main Menu */
+  .fl-main-menu ul.et-menu > li{
+        padding: 0px !important;
+        margin: -24px 0px 0px 0px !important;
+  }
+  .fl-main-menu ul.et-menu > li:last-child{
+      margin-right:11px !important;
+  }
+  .fl-main-menu ul.et-menu > li > a {
+        padding: 0px 0px 22px 0px!important;
+        line-height:1.4em;
+        border-bottom: 2px solid transparent;
+        margin-left:48px;
+  }
+  body:not(.home) .fl-main-menu ul.et-menu > li.current-menu-item > a,
+  .fl-main-menu ul.et-menu > li > a:hover {
+      border-bottom: 2px solid #ffcb2b;
+      opacity:1;
+  }
+  
+  /* Mobile Menu */
+  .fl-mobile-menu .et_mobile_nav_menu,
+  .fl-mobile-menu .et_mobile_nav_menu > a {
+      width: 100%;
+  }
+  .fl-mobile-menu .mobile_menu_bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 59.83px;
+  }
+  .fl-mobile-menu .mobile_menu_bar:after {
+      content: "MENU";
+      color: #fff;
+      font: 700 16px/1 "Muli",sans-serif;
+  }
+  .fl-mobile-menu ul.et_mobile_menu {
+      border: none;
+      padding: 0;
+  }
+  /* Mobile Practice Areas */
+  .fl-mobile-menu.fl-mobile-pa .mobile_menu_bar {
+      height: 54.7px;
+  }
+  .fl-mobile-menu.fl-mobile-pa .mobile_menu_bar:after {
+      content: "VIEW OUR PRACTICE AREAS";
+  }
+  
+  .fl-column-right{
+      text-align:right;
+  }
+  .fl-cta-phone{
+      width: 235px;
+  }
+  
+  .fl-cta-phone:hover:after {
+      color: #ffcb2b;
+  }
+  .fl-cta-phone:after {
+      content: "\f10b ";
+      left: 21px;
+      top: 19px;
+      font-family: fontAwesome;
+      position: absolute;
+      color: #c59501;
+      font-size: 49px;
+  }
+  .fl-column-banner-1{
+      width:46% !important;
+  }
+  .fl-column-banner-2{
+      width:54% !important;
+  }
+  .home .fl-column-banner-1{
+      width:41.7% !important;
+  }
+  .home .fl-column-banner-2{
+      width:58.3% !important;
+  }
+  .fl-banner-tagline h4{
+      font-weight: 400 !important;
+  }
+  ol.dcsbcm_divi_breadcrumbs {
+      padding:0px;
+  }
+  .fl-breadcrumbs a{
+      text-decoration:underline;
+  }
+  
+  /* Ipad Device */
+  @media all and (min-width: 981px) and (max-width: 1099px) {
+      .fl-main-menu ul.et-menu > li > a {
+        padding: 0px 0px 25px 0px!important;
+        margin-left:15px;
+        font-size:16px;
+  }
+      .fl-cta-phone{
+          margin-left:15px !important;
+      }
+      .home .fl-banner-tagline  h4{
+          font-size:50px;
+      }
+  }
+  
+  /* Mobile Device */
+  @media all and (max-width: 980px){
+      .fl-cta-phone:after {
+          top: 12px !important;
+      }
+      .fl-column-banner-2{
+          width:100% !important;
+      }
+  }/*
+  |--------------------------------------------------------------------------
+  | Footer
+  |--------------------------------------------------------------------------
+  */
+  .page-contact .fl-contact-section{
+    display: none;
+  }
+  
+  /* Short Form Style */
+  .fl-short-form input:not([type="button"])::-webkit-input-placeholder,
+  .fl-short-form textarea::-webkit-input-placeholder{
+      color: #fff;
+  }
+  .fl-short-form input:not([type="button"])::-moz-input-placeholder,
+  .fl-short-form textarea::-moz-input-placeholder{
+      color: #fff;
+  }
+  .fl-short-form input:not([type="button"]):-moz-placeholder,
+  .fl-short-form textarea:-moz-placeholder{
+      color: #fff;
+  }
+  .fl-short-form input:not([type="button"]):-ms-placeholder,
+  .fl-short-form textarea::-ms-placeholder{
+      color: #fff;
+  }
+  /*
+  |--------------------------------------------------------------------------
+  | Home
+  |--------------------------------------------------------------------------
+  *//*
+  |--------------------------------------------------------------------------
+  | Internal
+  |--------------------------------------------------------------------------
+  */
+  
+  .fl-main-content.et_pb_post_content h1 {
+      padding-bottom: 25px !important;
+  }
+  
+  .fl-main-content.et_pb_post_content h2 {
+      font-weight: 400 !important;
+  }
+  
+  .fl-main-content.et_pb_post_content h2,
+  .fl-main-content.et_pb_post_content h3,
+  .fl-main-content.et_pb_post_content h4{
+      padding-bottom: 0px !important;
+      margin-bottom: 20px;
+  }
+  
+  .fl-main-content .form-links a{
+      text-decoration: none;
+  }
+  .fl-main-content .et_pb_section{
+      background: transparent;
+  }
+  .fl-main-content .et_pb_row{
+      width: 100%;
+  }
+  
+  .fl-main-content.et_pb_post_content a:active,
+  .fl-main-content.et_pb_text a:active {
+      color: #010101 !important;
+      text-decoration: none !important;
+  }
+  
+  .fl-main-content.et_pb_post_content a:visited,
+  .fl-main-content.et_pb_text a:visited {
+      color: #2e434d !important;
+  }
+
+  #page-container .fl-main-content.et_pb_post_content a:focus,
+  #page-container .fl-main-content.et_pb_text a:focus {
+      color: #ffcb2b !important;
+  }
+  
+  .fl-main-content.et_pb_post_content p.callOut,
+  .fl-main-content.et_pb_post_content blockquote{
+      background: #2e434d;
+      padding: 24px 32px !important;
+      color: #fff;
+  }
+  
+  .fl-main-content.et_pb_post_content p{
+      margin: 0px 0px 32px;
+      padding: 0px !important;
+  }
+  
+  .fl-main-content.et_pb_post_content ul li{
+      position: relative;
+      padding: 0 0 0 10px;
+  }
+  
+  .fl-main-content.et_pb_post_content ul li:before{
+      content: "";
+      position: absolute;
+      top: 13px;
+      left: 0px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: #010101;
+  }
+  
+  .fl-sidebar h4{
+      padding: 30px 5px 29px 74px !important;
+      border-bottom: 1px solid #9ea64a; 
+  }
+  
+  .fl-sidebar .menu li {
+      margin: 0;
+  }
+  
+  .fl-sidebar .menu > li > a{
+      display: block;
+      position: relative;
+      padding: 24px 10px 23px 75px;
+      border-bottom: 1px solid #9ea64a;
+  }
+  
+  .fl-sidebar .menu > li > a:hover,
+  .fl-sidebar .menu > li[class*="current"] > a{
+      background: #ffcb2b;
+  }
+  
+  .fl-sidebar .menu > li > a:after{
+      content: "\f18e";
+      position: absolute;
+      font-family: fontAwesome;
+      top: 25px;
+      left: 32px;
+      font-weight: 400;
+      color: #fff;
+      font-size: 18px;
+  }
+  
+  .fl-sidebar .menu > li > ul.sub-menu{
+      padding: 0 10px 0 94px !important;
+      display: none;
+  }
+  
+  .fl-sidebar .menu > li > ul.sub-menu > li > a{
+      margin: 0 0 27px;
+      font-size: 18px;
+      font-weight: 400;
+      display: block;
+  }
+  
+  .fl-sidebar .menu > li > ul.sub-menu > li > a:hover,
+  .fl-sidebar .menu > li > ul.sub-menu > li[class*="current"] > a{
+      color: #ffcb2b !important;
+  }
+  
+  .fl-sidebar .menu > li[class*="current"] > ul.sub-menu {
+      display: block;
+  }
+  
+  /*
+  |--------------------------------------------------------------------------
+  | People
+  |--------------------------------------------------------------------------
+  */
+  
+  /* Style link for people */
+  .et-db #et-boc .fl_people_single a,
+  .et-db #et-boc .fl_people_single a:hover {
+      text-decoration: none !important;
+  }
+  
+  /* People position */
+  .fl-people-position ul.bio-list {
+      margin: 0;
+      padding: 0 !important;
+      list-style: none;
+  }
+  
+  /* Responsive mobile & tablet */
+  @media only screen and (max-width: 980px) {
+      .fl-main-content.et_pb_post_content p{
+          margin: 0px 0px 20px;
+      }
+  
+      .fl-main-content.et_pb_post_content h1 {
+          padding-bottom: 20px !important;
+      }
+  }/*
+  |--------------------------------------------------------------------------
+  | Blog, Archives, Single Post, Search Result, 404
+  |--------------------------------------------------------------------------
+  */
+  /* Sidebar */
+  .fl-sidebar-blog aside:not(:last-child) ul {
+      margin-bottom: 20px;
+  }
+  
+  .fl-sidebar-blog .widgettitle {
+      margin: 20px 0 2px !important;
+  }
+  
+  .fl-sidebar-blog ul li {
+      text-decoration: underline !important;
+  }
+  
+  .fl-sidebar-blog ul li:hover,
+  .fl-sidebar-blog ul li:hover a {
+      text-decoration: none !important;
+  }
+  
+  .fl-rss-blog a:hover {
+      text-decoration: none !important;
+  }
+  
+  /* Title */
+  
+  .fl-blog-section .fl-loop-blog .et_pb_post h2.entry-title a:hover {
+      text-decoration: none !important;
+  }
+  /*Firefox issue: Exclamation icon is missing in disclaimer pop up in Contact Form */
+  .fl-disclaimer__icon:before,.dashicons-info:before{
+    content: '\f06a' !important;
+    font-family: 'FontAwesome';
+  }
+  .fl-disclaimer__close:before {
+      content: '\f00d' !important;
+      font-family: 'FontAwesome';
+  }
+  
+  @media screen and (min-width:981px){
+      .fl-cta-phone p>span>a{
+          margin-left: 40px !important;
+      }
+  }
+  #page-container .fl-main-content .callOut a {
+      color: #fff !important;
+      text-decoration:none;
+  }
+  
+  .page-id-15 .fl-main-content ul li:before{
+      display: none;
+  }
+  
+  #nf-field-8-0{                           
+      display:none !important;
+  }
+  #nf-field-8-1 {
+          display:none !important;
+  }
+  
+  @media screen and (max-width:980px){
+      .home .fl-column-banner-1{
+          width: 0% !important;
+      }
+      .home .fl-column-banner-2 {
+          width: 100%!important;
+      }
+  }

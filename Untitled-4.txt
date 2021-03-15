@@ -1,0 +1,4 @@
+.fl-banner-video .vjs-dock-title,
+.fl-banner-video.vjs-dock-description{
+    display:none;
+}
